@@ -41,7 +41,7 @@ function App() {
       </div>
       <div className="MainMidle">
         <div className="cloudDescriptionIcon">
-        <SvgSelector cssClass="cloudDescriptionIcon" code = "11d"/>
+        <SvgSelector cssClass="cloudDescriptionIcon" code = {cloudDescriptionIcon}/>
         </div>
         <div className="MainTemp">
         {DailyTemp}
