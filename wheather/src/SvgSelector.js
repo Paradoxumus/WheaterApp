@@ -26,16 +26,16 @@ function SvgSelector(props) {
         svgSelect = Cloud;
         break;
         case"03d":
-        svgSelect = ScattedCloud;
+        svgSelect = BrokenCloud;
         break;
         case"03n":
-        svgSelect = ScattedCloud;
+        svgSelect = BrokenCloud;
         break;
         case"04d":
-        svgSelect = BrokenCloud;
+        svgSelect = ScattedCloud;
         break;
         case"04n":
-        svgSelect = BrokenCloud;
+        svgSelect = ScattedCloud;
         break;
         case"09d":
         svgSelect = ShowerRain;
