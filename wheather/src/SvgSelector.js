@@ -12,6 +12,16 @@ import Mist from "./images/icons/Mist.svg";
 function SvgSelector(props) {
     const { cssClass, code } = props;
     let svgSelect;
+
+  // Вместо свчиа лучше сделать это через словарь 
+  // const svgSelectDictionary = {
+  //   '01d': Sun,
+  //   '01n': Sun,
+  //   '02d': Cloud,
+  //    ...
+  // }
+  // return <img className={cssClass} src={svgSelectDictionary[code]} alt={code}/>
+
     switch(code){
         case"01d":
         svgSelect = Sun;

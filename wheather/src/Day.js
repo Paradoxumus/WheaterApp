@@ -1,13 +1,15 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types";  // Удаляй мусор из кода
 import SvgSelector from "./SvgSelector";
 function Day ({dt, codeIcon, temp, tempNight}) {
-    var date = new Date(dt*1000)
+    var date = new Date(dt*1000) // не используй var только let и const
     var number = date.getDate()
     var today = new Date()
     var day = date.getDay()
     var border = "day";
     let week;
-    if(today.getDate() == number){
+
+    // Лучше убрать в функции
+    if(today.getDate() == number){ // Лучше использовать везде строгую проверку ===
       week = "Сегодня"
       border = "border";
     }

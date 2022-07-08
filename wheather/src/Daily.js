@@ -3,7 +3,7 @@ import './App.css';
 import Day from './Day';
 
 function Daily({dailyWeather}) {
-    var nameTime = new Date(0);
+    var nameTime = new Date(0); // var устаревшая конструкция. И ты не используешь эту переменную
      if (!dailyWeather.length){
          return null  
      }
@@ -16,6 +16,7 @@ function Daily({dailyWeather}) {
             <div className='daily-list'>
                 {dailyWeather.map((day) => {
                     return<Day
+                    // key необходимый элемент при маппинге в реакт
                     dt={day.dt}
                     codeIcon={day.weather[0].icon}
                     temp = {day.feels_like.day}

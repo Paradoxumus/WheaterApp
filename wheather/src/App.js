@@ -10,6 +10,8 @@ const lon = '49.56846';
 const API_key = "688f3cfe6eb6211b3e466e410b5a1c4a";
 const urlToday = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric&lang=ru`
 const urlDaily = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric&lang=ru`
+
+// Посмотри третью лекцию там мы разбирали как почитстить репозиторий 
 function App() {
 
   const [cloudDescription, setcloudDescription] =  useState('пусто')
@@ -41,6 +43,8 @@ function App() {
   fetchData();
   }, [])
 
+  // Отформатируй код
+  // Сохраняй единую стилистику в именовании классов
   return (
     <div className="App">
       <div className='City'>
