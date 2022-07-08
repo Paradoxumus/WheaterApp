@@ -79,7 +79,7 @@ SvgSelector.propTypes = {
   };
   
   SvgSelector.defaultProps = {
-    code: "02n",
+    code: "50n",
     cssClass: "cloudDescriptionIcon",
   };
   
