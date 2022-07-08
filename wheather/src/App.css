@@ -1,3 +1,4 @@
+/* Хранить все стили в одном файле - плохая концепция */ 
 .App {
   background-image: url('/src/images/Background.png');
   background-size:cover;
@@ -56,7 +57,7 @@
   width: 5vw;
   height: 15vh;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto'; /* У нас один шрифт на сайте. Примени его ко всем элементам */
   font-style: normal;
   font-weight: 300px;
   font-size: 10vh;
@@ -72,7 +73,7 @@
   flex-grow: 0;
 }
 .cloudDescription{
-  position: absolute;
+  position: absolute; /* Абсолютное позиционирование тут ошибочно */
   width: 12%;
   height: auto;
   left: 44%;
